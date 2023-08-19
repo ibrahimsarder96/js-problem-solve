@@ -14,3 +14,15 @@ console.log(rooNumber.sort(function(a,b){
 const students = ["Ibrahim", "John", "Shamim", "Prantik", "Allby"];
 let res = students.sort();
 console.log(res);
+
+// 4. Write a function that can tell us whether an year is a leap year or not.
+
+function inLeapYear(year){
+  if((year % 400 === 0) || ((year % 100 === 0) && (year % 4 !== 0))){
+    console.log(`${year} is a Leap Year`);
+  }
+  else{
+    console.log(`${year} is not a Leap Year`);
+  }
+}
+inLeapYear(2028);
