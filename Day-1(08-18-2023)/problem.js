@@ -5,6 +5,12 @@ function getRandomNumber(min, max){
 console.log(getRandomNumber(1, 10));
 
 // 2. How can you order roll numbers of students in your class sequentially
+const rooNumber = [20, 22, 1, 4, 6, 8, 2, 7];
+console.log(rooNumber.sort(function(a,b){
+  return a - b;
+}))
+
+// 3. How can you order names of students in your class sequentially?
 const students = ["Ibrahim", "John", "Shamim", "Prantik", "Allby"];
 let res = students.sort();
 console.log(res);
