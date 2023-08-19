@@ -42,3 +42,20 @@ function countVowels(sentence){
   return count;
 }
 console.log(countVowels('I love Programming. I am a Software Engineer my Future plan'));
+
+// 6. How would you extract the duplicate numbers in an array?
+
+// const numbers = [1, 3, 5, 6 , 5, 3, 4, 6];
+
+// const duplicates = numbers.filter(function(value, index, array){
+//   return array.indexOf(value) !== index;
+// });
+// console.log(duplicates);
+
+// 7. How would you extract the unique numbers in an array?
+const numbers = [1, 3, 5, 6 , 5, 3, 4, 6];
+
+const duplicates = numbers.filter(function(value, index, array){
+  return array.indexOf(value) === index;
+});
+console.log(duplicates);
