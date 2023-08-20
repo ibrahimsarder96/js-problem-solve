@@ -71,3 +71,18 @@ console.log(occurences);
 let position = sentence.search(/Ibrahim/i);
 position = position >= 0 ? position : 'Not Found';
 console.log(position); 
+// input : linearSearch (['a', 'b', 'c','d', 'e', 'f',]), 'b');
+
+function linearSearch(arr, value){
+  console.log(value);
+  let length = arr.length;
+  for(let i = 0; i< length; i++){
+    if(arr[i] === value){
+    return i;
+    }
+  }
+  return 'Not Found';
+}
+
+
+console.log(linearSearch(['a', 'b', 'c','d', 'e', 'f'], 'b'));
