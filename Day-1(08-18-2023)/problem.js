@@ -59,3 +59,15 @@ const duplicates = numbers.filter(function(value, index, array){
   return array.indexOf(value) === index;
 });
 console.log(duplicates);
+
+// below the sentence use the ibrahim word total and how to position first time Ibrahim
+let sentence = "My name is Ibrahim. i am student. My pesion web developer. My future goal Software Engineer. MY Full name Md. Ibrahim Sarder.";
+
+const matches = sentence.match(/Ibrahim/gi);
+const occurences = matches ? matches.length : 0;
+
+console.log(occurences);
+
+let position = sentence.search(/Ibrahim/i);
+position = position >= 0 ? position : 'Not Found';
+console.log(position); 
