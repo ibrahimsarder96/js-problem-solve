@@ -29,6 +29,6 @@ function mergeSortedArray(a, b){
   return merged;
 }
 
-console.log(mergeSortedArray([2,50,6,9], [1,2,3,29]));
+console.log(mergeSortedArray([10,20,30,40], [5,15,25,35]));
 
         
